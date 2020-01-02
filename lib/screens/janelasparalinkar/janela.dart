@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:rpg_estudo/screens/home_page.dart';
 
 class Janela extends StatelessWidget {
 
@@ -13,8 +15,20 @@ class Janela extends StatelessWidget {
       appBar: AppBar(
         title: Text(titulo),
         backgroundColor: cor,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.home),
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(
+                builder: (context) => HomePage(),
+              ));
+            },
+          ),
+        ]
       ),
-      body: Center(child: Text('teste'),),
+      body: Center(
+        child: Text('teste'),
+      ),
     );
   }
 }

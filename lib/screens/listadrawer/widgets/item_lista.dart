@@ -7,15 +7,22 @@ class ListItem extends StatelessWidget {
   final String subTitulo;
   final Icon icone;
   final Janela janela;
+  final Color bgIconColor;
 
-  ListItem({this.titulo, this.subTitulo, this.icone, this.janela});
+  ListItem({
+    this.titulo, 
+    this.subTitulo, 
+    this.icone, 
+    this.janela,
+    this.bgIconColor,
+  });
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
       
       leading: CircleAvatar(
-        backgroundColor: Colors.green,
+        backgroundColor: bgIconColor,
         child: icone,
       ),
       title: Text(
@@ -26,7 +33,7 @@ class ListItem extends StatelessWidget {
         ),
       ),
       subtitle: Text(subTitulo),
-      trailing: Icon(Icons.navigate_next),
+      trailing: Icon(Icons.arrow_forward_ios,),
       onTap: () {
         Navigator.push(context, MaterialPageRoute(
           builder: (context) => janela

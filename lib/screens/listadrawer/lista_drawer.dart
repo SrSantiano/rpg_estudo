@@ -7,6 +7,7 @@ class Lista extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+
         ListItem(
           titulo: 'teste', 
           subTitulo: 'teste', 
@@ -14,8 +15,10 @@ class Lista extends StatelessWidget {
             Icons.build, 
             color: Colors.white,
           ),
-          janela: Janela(titulo: 'agora vai',),
+          bgIconColor: Colors.lightGreen[800],
+          janela: Janela(titulo: 'agora vai', cor: Colors.green,),
         ),
+
         ListItem(
           titulo: 'teste', 
           subTitulo: 'teste', 
@@ -23,8 +26,10 @@ class Lista extends StatelessWidget {
             Icons.folder, 
             color: Colors.white,
           ),
-          janela: Janela(titulo: 'agora foi',),
+          bgIconColor: Colors.deepOrange,
+          janela: Janela(titulo: 'agora foi', cor: Colors.red[600],),
         ),
+
         ListItem(
           titulo: 'teste', 
           subTitulo: 'teste', 
@@ -32,8 +37,10 @@ class Lista extends StatelessWidget {
             Icons.accessible_forward, 
             color: Colors.white,
           ),
-          janela: Janela(titulo: 'agora ta indo',),
+          bgIconColor: Colors.yellow[700],
+          janela: Janela(titulo: 'agora ta indo', cor: Colors.black54,),
         ),
+
         ListItem(
           titulo: 'teste', 
           subTitulo: 'teste', 
@@ -41,7 +48,8 @@ class Lista extends StatelessWidget {
             Icons.add_call, 
             color: Colors.white,
           ),
-          janela: Janela(titulo: 'agora não para mais',),
+          bgIconColor: Colors.purple[400],
+          janela: Janela(titulo: 'agora não para mais', cor: Colors.deepOrange[300],),
         ),
       ],
     );
