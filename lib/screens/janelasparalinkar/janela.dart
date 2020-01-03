@@ -19,6 +19,7 @@ class Janela extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.home),
             onPressed: () {
+              Navigator.pop(context);
               Navigator.push(context, MaterialPageRoute(
                 builder: (context) => HomePage(),
               ));
