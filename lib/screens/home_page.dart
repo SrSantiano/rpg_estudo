@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rpg_estudo/screens/custom_drawer.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -12,7 +13,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text("RPG"),
       ),
-      drawer: Drawer(
+      drawer: CustomDrawer(
         
       )
     );
